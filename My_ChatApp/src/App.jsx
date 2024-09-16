@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup } from 'firebase/auth'
 import { getFirestore,onSnapshot, collection, addDoc, orderBy, query, serverTimestamp} from 'firebase/firestore'
-import { auth, app } from '../firebase'
+import { auth, app } from './firebase'
 
 const db = getFirestore(app)
 
